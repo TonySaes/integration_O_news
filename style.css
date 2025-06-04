@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-wrap: wrap; /* Retour à la ligne des articles */
     justify-content: flex-start;
-    align-items: center;
     margin-right: 0.8rem;
     overflow-y: scroll; /* Scroll vertical si besoin */
 }
@@ -42,7 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%; /* Deux articles par ligne */
-    height: 60vh;
     border: 1px solid var(--color-grey);
     border-left: none;
     background-color: var(--color-white);
@@ -51,15 +49,15 @@ body {
 
 /* Thème de l'article (catégorie) */
 .article_theme {
-    width: 25%;
+    width: 5rem;
     border-radius: 5px;
-    padding: 0;
     padding: 0.3rem;
     margin-bottom: 2rem;
     text-align: center;
     color: var(--color-white);
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
 /* Couleurs de fond selon le thème */
@@ -117,6 +115,9 @@ body {
 
 /* Partie gauche (présentation) */
 .left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50vw;
     height: 100vh;
     background-image: url(./images/nicole.jpg); /* Image de fond */
@@ -148,7 +149,6 @@ body {
     display: flex;
     flex-direction: column; 
     letter-spacing: normal;
-    margin-bottom: 12rem;
 }
 .header_title span {
     height: 2.2rem;
@@ -178,7 +178,6 @@ body {
 /* Pied de page à gauche */
 .left-part_footer {
     padding: 2rem;
-    margin-top: 14rem;
     display: flex;
     gap : 4rem;
     justify-content: flex-end;
