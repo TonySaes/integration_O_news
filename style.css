@@ -1,52 +1,59 @@
+/* Définition des variables CSS pour les couleurs principales du site */
 :root {
- --color-lighter-blue:#007bff;
- --color-darker-blue:#0056b3; 
- --color-white: #f9f9f9;
- --color-grey:#eaeaea;
- --color-middle-blue:#0766F0;
- --color-red:#DC5E53;
- --color-green:#98DC62;
-
+ --color-lighter-blue:#007bff; /* Bleu clair */
+ --color-darker-blue:#0056b3;  /* Bleu foncé */
+ --color-white: #f9f9f9;       /* Blanc */
+ --color-grey:#eaeaea;         /* Gris clair */
+ --color-middle-blue:#0766F0;  /* Bleu moyen */
+ --color-red:#DC5E53;          /* Rouge */
+ --color-green:#98DC62;        /* Vert */
 }
+
+/* Style général du body */
 body {
-    display: flex;
-    background-color: var(--color-grey);
-    font-family: sans-serif;
-    height: 100vh;
-    overflow: hidden;
+    display: flex; /* Utilise Flexbox pour la mise en page principale */
+    background-color: var(--color-grey); /* Couleur de fond */
+    font-family: sans-serif; /* Police sans empattement */
+    height: 100vh; /* Hauteur de la fenêtre */
+    overflow: hidden; /* Cache les débordements */
 }
 
+/* Partie droite contenant les articles */
 .right-part {
-    width: 50%;
+    width: 50%; /* Prend la moitié de la largeur */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Retour à la ligne des articles */
     justify-content: flex-start;
     align-items: center;
     margin-right: 0.8rem;
-    overflow-y: scroll;
+    overflow-y: scroll; /* Scroll vertical si besoin */
 }
+
+/* Titre de la partie droite */
 .right-part_title {
     display: block;
     width: 100%;
     font-size: 2.5rem;
     padding: 2rem;
-    
 }
+
+/* Style des articles à droite */
 .right-part_article {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50%; /* Deux articles par ligne */
     height: 60vh;
     border: 1px solid var(--color-grey);
     border-left: none;
     background-color: var(--color-white);
     padding: 2rem;
-    
 }
 
+/* Thème de l'article (catégorie) */
 .article_theme {
     width: 25%;
-    border-radius: 5px;padding: 0;
+    border-radius: 5px;
+    padding: 0;
     padding: 0.3rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -54,6 +61,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* Couleurs de fond selon le thème */
 .theme--green {
     background-color: var(--color-green);
 }
@@ -64,58 +73,74 @@ body {
     background-color: var(--color-red);
 }
 
+/* Titre de l'article */
 .article_title{
     font-size:2.3rem;
     margin-bottom: 2rem;
 }
 
+/* Auteur de l'article */
 .article_author {
   display: flex;
   align-items: center;
   gap:2rem;
   margin-bottom: 2rem;   
 }
+
+/* Image de l'auteur */
 .author_img {
     width: 3rem;
 }
+
+/* Nom de l'auteur */
 .author_name {
     font-weight:bold;
 }
+
+/* Date de l'article */
 .author_time {
     color: rgb(165, 164, 164);
     font-weight:normal;
 }
 
+/* Texte de l'article */
 .article_text {
     margin-bottom:2rem;
     font-size:1.3rem;
-    
 }
+
+/* Lien dans l'article */
 .article_link {
     color: var(--color-lighter-blue);
     font-weight: bold;
 }
 
+/* Partie gauche (présentation) */
 .left-part {
     width: 50vw;
     height: 100vh;
-    background-image: url(./images/nicole.jpg);
+    background-image: url(./images/nicole.jpg); /* Image de fond */
     background-origin: border-box;
     background-size: cover;
     background-position: center;
     color: var(--color-white);
 }
+
+/* En-tête de la partie gauche */
 .left-part_header {
     display: flex;
     padding: 2rem;
-
 }
+
+/* Logo dans l'en-tête */
 .header_logo {
     width: 4rem;
     height: 4rem;
     margin-top: 1.2rem;
     margin-right: 0.5rem;
 }
+
+/* Titre principal dans l'en-tête */
 .header_title {
     height: 8rem;
     font-size: 2.2rem;
@@ -129,14 +154,17 @@ body {
     height: 2.2rem;
 }
 
+/* Article de présentation à gauche */
 .left-part_article {
     width: 90%;
-    background-color: rgba(207, 207, 207, 0.3);
+    background-color: rgba(207, 207, 207, 0.3); /* Fond semi-transparent */
     z-index: 0.5;
     text-align: end;
     padding: 2rem;
     margin : 2rem auto;
 }
+
+/* Titre de l'article de présentation */
 .article_title1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -147,6 +175,7 @@ body {
     font-style: italic;
 }
 
+/* Pied de page à gauche */
 .left-part_footer {
     padding: 2rem;
     margin-top: 14rem;
@@ -154,6 +183,8 @@ body {
     gap : 4rem;
     justify-content: flex-end;
 }
+
+/* Liens du pied de page */
 .footer_link {
     color: var(--color-white);
     text-decoration: none;
