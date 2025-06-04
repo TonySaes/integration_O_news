@@ -45,7 +45,7 @@ body {
     
 }
 
-.article_theme--green {
+.article_theme {
     width: 25%;
     border-radius: 5px;
     padding: 0.3rem;
@@ -57,8 +57,15 @@ body {
     background-color: var(--color-green);
 }
 
-
-
+.theme--green {
+    background-color: var(--color-green);
+}
+.theme--blue {
+    background-color: var(--color-middle-blue);
+}
+.theme--red {
+    background-color: var(--color-red);
+}
 
 
 .left-part {
